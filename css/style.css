@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(233, 233, 222);
+}
+
+.cabeca {
+    display: flex;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    gap: 78px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+#divBusca{
+    border:solid 1px;
+    border-radius:15px;
+    max-width:400px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-top: 13px;
+    padding-left:8px;
+    padding-bottom: 8px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    max-height:32px;
+    max-width:260px;
+    border-radius:15px;
+  }
+
+  .logo {
+      max-width: 70px;
+  }
+
+  .btnBusca {
+      max-width: 30px;
+      max-height: 30px;
+      margin-top: 5px;
+  }
+
+  .iconEntrar {
+      vertical-align: middle;
+      
+  }
+
+  .btnBusca, .material-icons, .entrar {
+      cursor: pointer;
+  }
+
+  .entrar {
+    font-family: 'Oswald', sans-serif;
+  }
+
+.nav {
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.navegacao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-bottom: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgba(19, 18, 18, 0.74);
+    text-decoration: underline;
+}
+
+.banner {
+    margin-bottom: 15px;
+}
+
+footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    flex: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+.img-icon {
+    display: flex;
+    gap: 8px;
+}
+
+footer a img {
+    max-width: 22px;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 90%;
+    height: 90vh;
+}
+
+.corpo {
+    display: grid;
+    grid-template-areas: 
+    "list_col-1 list_col-2 list_col-3"
+    "footer-button     footer-button     footer-button";
+    text-align: center;
+}
+
+.list_col-1 {
+    grid-area: list_col-1;
+}
+
+.list_col-2 {
+    grid-area: list_col-2;
+}
+
+.list_col-3 {
+    grid-area: list_col-3;
+}
+
+.footer-button {
+    grid-area: footer-button;
+}
+
+.list_col-1, .list_col-2, .list_col-3, .footer-button {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
