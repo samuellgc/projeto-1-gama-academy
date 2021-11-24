@@ -28,7 +28,7 @@ body {
     max-width:400px;
   }
   
-  #txtBusca{
+#txtBusca{
     float:left;
     background-color:transparent;
     padding-top: 13px;
@@ -42,26 +42,26 @@ body {
     border-radius:15px;
   }
 
-  .logo {
-      max-width: 70px;
+.logo {
+    max-width: 70px;
   }
 
-  .btnBusca {
-      max-width: 30px;
-      max-height: 30px;
-      margin-top: 5px;
+.btnBusca {
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 5px;
   }
 
-  .iconEntrar {
-      vertical-align: middle;
+.iconEntrar {
+    vertical-align: middle;
       
   }
 
-  .btnBusca, .material-icons, .entrar {
-      cursor: pointer;
+.btnBusca, .material-icons, .entrar {
+    cursor: pointer;
   }
 
-  .entrar {
+.entrar {
     font-family: 'Oswald', sans-serif;
   }
 
@@ -170,12 +170,12 @@ footer a img {
     background:linear-gradient(#788581, #6f7a7a);
   }
   
-  .botaoAtalho:hover {
+.botaoAtalho:hover {
     background: linear-gradient(#6c7c7c, #768d87);
   }                      
 
-  .botaoAtalho a {
-      text-decoration: none;
+.botaoAtalho a {
+    text-decoration: none;
   }
 
 .row {
@@ -186,7 +186,7 @@ footer a img {
     flex: 1;
 }
 
-.card {
+.card, .card-compras {
     background-color: rgb(230, 230, 230);
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
@@ -197,13 +197,35 @@ footer a img {
     transition: all 0.3s ease-out;
 }
 
-.card:hover {
+.card-compras {
+    height: 325px;
+}
+
+.card:hover, .card-compras:hover {
     transform: translateY(-5px);
     cursor: pointer;
 }
 
-.card-1, .card-2, .card-3 {
+.card-1, .card-2, .card-3, .card-compras-1, .card-compras-2, .card-compras-3 {
     width: 200px;
+}
+
+.card-compras-2 {
+    height: 180px;
+}
+
+.card-3, .card-compras-1-sapato {
+    margin-top: 70px;
+    width: 200px;
+}
+
+.card-compras-3-sapato {
+    margin-top: 40px;
+    width: 200px;
+}
+
+.card-3-p, .p-sapato{
+    margin-top: 15px;
 }
 
 .btn-compre-agora a {
@@ -226,10 +248,116 @@ footer a img {
     background:linear-gradient(#788581, #6f7a7a);
   }
   
-  .btn-compre-agora:hover {
+.btn-compre-agora:hover {
     background: linear-gradient(#6c7c7c, #768d87);
   }                
 
-  .card p {
-      margin-bottom: 25px;
+.card p {
+    margin-bottom: 25px;
+    font-family: 'Source Serif Pro', serif;
+    color: #4d4d4d;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    height: auto;
   }
+
+.card-compras .p {
+    margin-bottom: 7px;
+    font-family: 'Source Serif Pro', serif;
+    color: #4d4d4d;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    height: auto;
+  }
+
+.p-frete {
+    color: #04d483;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Source Sans Pro Regular",sans-serif; 
+    margin-bottom: 7px;
+    text-align: left;
+  }
+
+.preco-1 {
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 7px;
+  }
+
+.preco-parc {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+  }
+
+.card-compras a {
+    text-decoration: none;
+  }
+
+.corpo-form input {
+    display: block;
+    height: 20px;
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.corpo-form textarea {
+    display: block;
+    height: 90px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+.label-form {
+    text-align: center;
+}
+
+.corpo-form {
+    display: flex;
+    justify-content: center;
+}
+
+.filtro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    width: 100%;
+}
+
+.filtro-1 {
+    display: flex;
+    gap: 30px;
+}
+
+.btn-filtro {
+    padding: 8px;
+    border: 1px solid;
+    background-color: black;
+    color: white;
+}
+
+.btn-filtro:hover {
+    color: rgb(196, 196, 196);
+}
+
+.quem-somos-h {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quem-somos-p {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
