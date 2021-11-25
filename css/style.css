@@ -375,6 +375,14 @@ footer a img {
     }
 }
 
+@media (min-width: 600px)
+{
+    .descricao {
+        height: 400px;
+        width: 500px;
+    }
+}
+
 .principal {
     width: 280px;
 }
@@ -388,8 +396,9 @@ footer a img {
 }
 
 .descricao {
-    height: 400px;
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
     margin: 20px;
     padding: 20px;
